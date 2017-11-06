@@ -1,0 +1,26 @@
+
+.container {
+    height: 100%;
+
+    border: 1px solid red;
+}
+
+.box-1 {
+    background-color: #234;
+    height: 20%;
+}
+
+.logo {
+    background-color: #ddd;
+    /*margin-top: 15px;*/
+}
+
+.box-2 {
+    background-color: #eee;
+    height: 60%;
+}
+
+.box-3 {
+    background-color: #234;
+    height: 20%; 
+}
