@@ -1,9 +1,22 @@
 <link rel="stylesheet" href="main.css">
 
 <body class="container">
-    <div class="box-1">
+<!--     <div class="box-1">
         <div class="logo">logo</div>
     </div>
     <div class="box-2"></div>
-    <div class="box-3"></div>
+    <div class="box-3"></div> -->
+
+    <!-- 懒加载 -->
+    <img id="test" src="img/preview.svg" data-realsrc="img/test.svg" alt="test" style="width: 200px;border: 1px solid #888">
+    <script>
+        var test = document.getElementById('test');
+
+        var timer = window.setTimeout(function(){
+            test.src = test.getAttribute("data-realsrc");
+
+            window.clearTimeout(timer);
+
+        }, 2000);
+    </script>
 </body>
